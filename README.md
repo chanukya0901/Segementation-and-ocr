@@ -53,28 +53,25 @@ key points considered for modelling:
        https://keras.io/examples/vision/captcha_ocr/
 
 Inference Pipeline:
-    
-    1. unzip foldername.zip 
-       unzip product_overlay_sappa_chanukya.zip 
 
-    2. create virtual environment.
+    1. create virtual environment.
        python3 -m venv odometer
     
-    3. activate virtual environment
+    2. activate virtual environment
        source odometer/bin/activate
 
-    4. install necessary requirements for code to run.
+    3. install necessary requirements for code to run.
        pip install -r setup.txt
 
-    5. export pythonpath to current directory
+    4. export pythonpath to current directory
         export PYTHONPATH=$PWD
 
-    6. run test_predict.py with your test folder path.
+    5. run test_predict.py with your test folder path.
         python test_predict.py --folder_path ./train/62a4ff862be4ea4a151632a9
 
         instead of ./train/62a4ff862be4ea4a151632a9 you need to provide your test directory path 
 
-    7. result will be stored with name test_results.csv in the present working directory.
+    6. result will be stored with name test_results.csv in the present working directory.
 
   Note: both model is trained on ubuntu22.04 with 16gb ram and 6 gb gpu ram.
         all the above details provided are steps to run on linux machine.  
